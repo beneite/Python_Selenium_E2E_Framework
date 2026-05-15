@@ -1,0 +1,24 @@
+[project]
+name = "python-selenium-e2e-framework"
+version = "1.0.0"
+description = ""
+authors = [
+    {name = "Ashish Mishra",email = "im.ashish707@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "selenium (>=4.43.0,<5.0.0)",
+    "pytest (>=9.0.3,<10.0.0)",
+    "webdriver-manager (>=4.0.2,<5.0.0)",
+    "pytest-html (>=4.2.0,<5.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "python_selenium_e2e_framework", from = "src"}]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
