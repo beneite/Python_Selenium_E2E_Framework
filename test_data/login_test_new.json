@@ -1,0 +1,41 @@
+{
+  "TC001": {
+    "testcase_name": "login test",
+    "testcase_description": "login test with ,multiple negative and positive scenarios",
+    "datasets": [
+      {
+        "username": "user1",
+        "password": "password1",
+        "expected_login_status": true
+      },
+      {
+        "username": "user2",
+        "password": "password2",
+        "expected_login_status": true
+      },
+      {
+        "username": "user1",
+        "password": "password2",
+        "expected_login_status": false
+      },
+      {
+        "username": "user2",
+        "password": "password1",
+        "expected_login_status": false
+      }
+    ]
+  },
+  "TC002": {
+    "testcase_name": "add to cart test",
+    "testcase_description": "check add to cart for a product",
+    "datasets": [
+      {
+        "username": "user1",
+        "password": "password1",
+        "expected_login_status": true,
+        "product": "black belt",
+        "quantity": 2
+      }
+    ]
+  }
+}
