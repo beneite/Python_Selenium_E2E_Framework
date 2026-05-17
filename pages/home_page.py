@@ -1,13 +1,15 @@
 from selenium.webdriver.common.by import By
+from pages.base_page import BasePage
 
 
-class HomePage:
+class HomePage(BasePage):
 
     catalog_link = (By.XPATH, "//a[text()='Catalog']")
     product_link = "//a[contains(@id, 'product')]//h3[text()='{}']"
     add_to_cart_button = (By.XPATH, "//input[@value='Add to Cart']")
 
     def __init__(self, driver):
+        super().__init__(driver)
         self.driver = driver
 
     def click_catalog(self):
